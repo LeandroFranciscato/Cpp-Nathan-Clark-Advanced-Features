@@ -35,6 +35,9 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/main-Polymorphism-and-virtual-functions.o \
+	${OBJECTDIR}/main-multiple-inheritance-and-abstract-class.o \
+	${OBJECTDIR}/main-overloading-operators.o \
 	${OBJECTDIR}/main.o
 
 
@@ -61,6 +64,21 @@ LDLIBSOPTIONS=
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/cpp-nathan-clark-advanced-features: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/cpp-nathan-clark-advanced-features ${OBJECTFILES} ${LDLIBSOPTIONS}
+
+${OBJECTDIR}/main-Polymorphism-and-virtual-functions.o: main-Polymorphism-and-virtual-functions.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main-Polymorphism-and-virtual-functions.o main-Polymorphism-and-virtual-functions.cpp
+
+${OBJECTDIR}/main-multiple-inheritance-and-abstract-class.o: main-multiple-inheritance-and-abstract-class.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main-multiple-inheritance-and-abstract-class.o main-multiple-inheritance-and-abstract-class.cpp
+
+${OBJECTDIR}/main-overloading-operators.o: main-overloading-operators.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main-overloading-operators.o main-overloading-operators.cpp
 
 ${OBJECTDIR}/main.o: main.cpp
 	${MKDIR} -p ${OBJECTDIR}

@@ -12,6 +12,9 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>main-Polymorphism-and-virtual-functions.cpp</itemPath>
+      <itemPath>main-multiple-inheritance-and-abstract-class.cpp</itemPath>
+      <itemPath>main-overloading-operators.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -36,6 +39,18 @@
       </toolsSet>
       <compileType>
       </compileType>
+      <item path="main-Polymorphism-and-virtual-functions.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="main-multiple-inheritance-and-abstract-class.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="main-overloading-operators.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
@@ -59,6 +74,18 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="main-Polymorphism-and-virtual-functions.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="main-multiple-inheritance-and-abstract-class.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="main-overloading-operators.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
