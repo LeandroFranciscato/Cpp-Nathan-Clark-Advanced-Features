@@ -15,6 +15,7 @@
       <itemPath>main-Polymorphism-and-virtual-functions.cpp</itemPath>
       <itemPath>main-exception-handling.cpp</itemPath>
       <itemPath>main-multiple-inheritance-and-abstract-class.cpp</itemPath>
+      <itemPath>main-namespaces.cpp</itemPath>
       <itemPath>main-overloading-operators.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
     </logicalFolder>
@@ -52,6 +53,8 @@
             tool="1"
             flavor2="0">
       </item>
+      <item path="main-namespaces.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="main-overloading-operators.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
@@ -88,6 +91,8 @@
             ex="false"
             tool="1"
             flavor2="0">
+      </item>
+      <item path="main-namespaces.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="main-overloading-operators.cpp" ex="false" tool="1" flavor2="0">
       </item>

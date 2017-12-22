@@ -22,7 +22,7 @@ namespace C {
     namespace C1 {
 
         void functionA() {
-            cout <<"This is the functionA from namespace C::C1"<<endl;
+            cout << "This is the functionA from namespace C::C1" << endl;
         }
     }
 }
@@ -42,9 +42,10 @@ int main () {
     return 0;
 }
  */
-
+/*
 int main() {
     C::functionA();
     C::C1::functionA();
     return 0;
 }
+ */

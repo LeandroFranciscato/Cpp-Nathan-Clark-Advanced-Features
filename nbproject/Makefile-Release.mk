@@ -38,6 +38,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/main-Polymorphism-and-virtual-functions.o \
 	${OBJECTDIR}/main-exception-handling.o \
 	${OBJECTDIR}/main-multiple-inheritance-and-abstract-class.o \
+	${OBJECTDIR}/main-namespaces.o \
 	${OBJECTDIR}/main-overloading-operators.o \
 	${OBJECTDIR}/main.o
 
@@ -80,6 +81,11 @@ ${OBJECTDIR}/main-multiple-inheritance-and-abstract-class.o: main-multiple-inher
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main-multiple-inheritance-and-abstract-class.o main-multiple-inheritance-and-abstract-class.cpp
+
+${OBJECTDIR}/main-namespaces.o: main-namespaces.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main-namespaces.o main-namespaces.cpp
 
 ${OBJECTDIR}/main-overloading-operators.o: main-overloading-operators.cpp
 	${MKDIR} -p ${OBJECTDIR}
