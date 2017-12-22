@@ -53,7 +53,7 @@ CCADMIN=CCadmin
 # build
 build: .build-post
 
-.build-pre:
+.build-pre: 
 # Add your pre 'build' code here...
 
 .build-post: .build-impl

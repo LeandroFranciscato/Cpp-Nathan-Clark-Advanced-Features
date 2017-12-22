@@ -36,11 +36,13 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/main-Polymorphism-and-virtual-functions.o \
+	${OBJECTDIR}/main-containers.o \
 	${OBJECTDIR}/main-exception-handling.o \
 	${OBJECTDIR}/main-multiple-inheritance-and-abstract-class.o \
 	${OBJECTDIR}/main-namespaces.o \
 	${OBJECTDIR}/main-overloading-operators.o \
-	${OBJECTDIR}/main.o
+	${OBJECTDIR}/main-templates.o \
+	${OBJECTDIR}/main-threads.o
 
 
 # C Compiler Flags
@@ -72,6 +74,11 @@ ${OBJECTDIR}/main-Polymorphism-and-virtual-functions.o: main-Polymorphism-and-vi
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main-Polymorphism-and-virtual-functions.o main-Polymorphism-and-virtual-functions.cpp
 
+${OBJECTDIR}/main-containers.o: main-containers.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main-containers.o main-containers.cpp
+
 ${OBJECTDIR}/main-exception-handling.o: main-exception-handling.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
@@ -92,10 +99,15 @@ ${OBJECTDIR}/main-overloading-operators.o: main-overloading-operators.cpp
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main-overloading-operators.o main-overloading-operators.cpp
 
-${OBJECTDIR}/main.o: main.cpp
+${OBJECTDIR}/main-templates.o: main-templates.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main-templates.o main-templates.cpp
+
+${OBJECTDIR}/main-threads.o: main-threads.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main-threads.o main-threads.cpp
 
 # Subprojects
 .build-subprojects:

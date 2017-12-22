@@ -13,11 +13,13 @@
                    displayName="Source Files"
                    projectFiles="true">
       <itemPath>main-Polymorphism-and-virtual-functions.cpp</itemPath>
+      <itemPath>main-containers.cpp</itemPath>
       <itemPath>main-exception-handling.cpp</itemPath>
       <itemPath>main-multiple-inheritance-and-abstract-class.cpp</itemPath>
       <itemPath>main-namespaces.cpp</itemPath>
       <itemPath>main-overloading-operators.cpp</itemPath>
-      <itemPath>main.cpp</itemPath>
+      <itemPath>main-templates.cpp</itemPath>
+      <itemPath>main-threads.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -40,11 +42,16 @@
         <rebuildPropChanged>false</rebuildPropChanged>
       </toolsSet>
       <compileType>
+        <ccTool>
+          <commandLine>-std=c++0x -pthread</commandLine>
+        </ccTool>
       </compileType>
       <item path="main-Polymorphism-and-virtual-functions.cpp"
             ex="false"
             tool="1"
             flavor2="0">
+      </item>
+      <item path="main-containers.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="main-exception-handling.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -57,7 +64,9 @@
       </item>
       <item path="main-overloading-operators.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      <item path="main-templates.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="main-threads.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -85,6 +94,8 @@
             tool="1"
             flavor2="0">
       </item>
+      <item path="main-containers.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="main-exception-handling.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="main-multiple-inheritance-and-abstract-class.cpp"
@@ -96,7 +107,9 @@
       </item>
       <item path="main-overloading-operators.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      <item path="main-templates.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="main-threads.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
   </confs>
