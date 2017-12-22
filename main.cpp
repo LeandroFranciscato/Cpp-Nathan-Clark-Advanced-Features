@@ -1,25 +1,50 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/* 
- * File:   main.cpp
- * Author: leandro
- *
- * Created on November 10, 2017, 1:11 PM
- */
-
-#include <cstdlib>
-
+#include <iostream>
 using namespace std;
+namespace A {
 
-/*
- * 
- */
-int main(int argc, char** argv) {
-
-    return 0;
+    void functionA() {
+        cout << "This is FunctionA from Namespace A" << endl;
+    }
 }
 
+namespace B {
+
+    void functionA() {
+        cout << "This is FunctionA from namespace B" << endl;
+    }
+}
+
+namespace C {
+
+    void functionA() {
+        cout << "This is the FunctionA from namespace C" << endl;
+    }
+    namespace C1 {
+
+        void functionA() {
+            cout <<"This is the functionA from namespace C::C1"<<endl;
+        }
+    }
+}
+
+
+/*
+int main() {
+    A::functionA();
+    B::functionA();
+    return 0;
+}
+ */
+/*
+using namespace B;
+int main () {
+    functionA();
+    return 0;
+}
+ */
+
+int main() {
+    C::functionA();
+    C::C1::functionA();
+    return 0;
+}

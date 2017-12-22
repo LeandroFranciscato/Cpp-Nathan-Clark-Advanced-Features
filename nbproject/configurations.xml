@@ -13,6 +13,7 @@
                    displayName="Source Files"
                    projectFiles="true">
       <itemPath>main-Polymorphism-and-virtual-functions.cpp</itemPath>
+      <itemPath>main-exception-handling.cpp</itemPath>
       <itemPath>main-multiple-inheritance-and-abstract-class.cpp</itemPath>
       <itemPath>main-overloading-operators.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
@@ -43,6 +44,8 @@
             ex="false"
             tool="1"
             flavor2="0">
+      </item>
+      <item path="main-exception-handling.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="main-multiple-inheritance-and-abstract-class.cpp"
             ex="false"
@@ -78,6 +81,8 @@
             ex="false"
             tool="1"
             flavor2="0">
+      </item>
+      <item path="main-exception-handling.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="main-multiple-inheritance-and-abstract-class.cpp"
             ex="false"

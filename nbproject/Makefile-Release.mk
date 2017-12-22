@@ -36,6 +36,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/main-Polymorphism-and-virtual-functions.o \
+	${OBJECTDIR}/main-exception-handling.o \
 	${OBJECTDIR}/main-multiple-inheritance-and-abstract-class.o \
 	${OBJECTDIR}/main-overloading-operators.o \
 	${OBJECTDIR}/main.o
@@ -69,6 +70,11 @@ ${OBJECTDIR}/main-Polymorphism-and-virtual-functions.o: main-Polymorphism-and-vi
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main-Polymorphism-and-virtual-functions.o main-Polymorphism-and-virtual-functions.cpp
+
+${OBJECTDIR}/main-exception-handling.o: main-exception-handling.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main-exception-handling.o main-exception-handling.cpp
 
 ${OBJECTDIR}/main-multiple-inheritance-and-abstract-class.o: main-multiple-inheritance-and-abstract-class.cpp
 	${MKDIR} -p ${OBJECTDIR}
